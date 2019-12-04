@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE flightlist [
+<!ELEMENT flightlist (flight+)> 
+<!ELEMENT flight (passengers+)>
+<!ATTLIST flight 
+number CDATA #REQUIRED 
+origin (BOS|SJU|SFO|JFK|DCA|MAD) "BOS"
+dest (BOS|SJU|SFO|JFK|DCA|MAD) "SJU"> 
+<!ELEMENT passengers (passenger+)> 
+<!ATTLIST passengers date CDATA #IMPLIED> 
+<!ELEMENT passenger EMPTY> 
+  		<!ATTLIST passenger 
+  		name CDATA #IMPLIED 
+  		seat CDATA #IMPLIED>
+  		
+  		]>
+  		
+<flightlist>
+    <flight number="787" origin="BOS" dest="SFO">
+        <passengers date="12-4-2019">
+              <passenger name="Abebe" seat="F09"/>
+        </passengers>
+        <passengers date="12-4-2019">
+              <passenger name="Tewodros" seat="F10"/>
+        </passengers>
+    </flight>
+
+<flight number="787656" origin="SFO" dest="BOS">
+        <passengers date="14-4-2019">
+              <passenger name="Abebe" seat="B52"/>
+        </passengers>
+               <passengers date="14-4-2019">
+              <passenger name="Abebe" seat="B53"/>
+        </passengers>
+    </flight>
+</flightlist>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE contacts SYSTEM "contacts.dtd" >
+<contacts version="1.0" source="source data">
+   <contact person="ID52652623" GENDER="F">
+      <name>
+          <first>Wobetu</first>
+          <middle>Shiferaw</middle>
+          <last>Asmare</last>
+      </name>
+      <location>
+          <address>Debre Markos</address>
+      </location>
+      <phone kind="Cell">+2517878465</phone>
+      <knows/>
+      <description></description>
+      <website>wobie.com</website>
+      <email>wobieatdmu.com</email>
+   </contact>
+   
+    <contact person="ID526526" GENDER="M">
+      <name>
+          <first>Alemu</first>
+          <middle>Ashagrie</middle>
+          <last>Tesema</last>
+      </name>
+      <location>
+          <address>Debre Markos</address>
+      </location>
+      <phone kind="Cell">+2517878</phone>
+      <knows/>
+      <description></description>
+      <website>alex.com</website>
+      <email>alexisatgmail.com</email>
+   </contact>
+</contacts>

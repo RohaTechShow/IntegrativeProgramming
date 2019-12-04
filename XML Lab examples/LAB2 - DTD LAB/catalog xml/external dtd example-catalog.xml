@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE CATALOG SYSTEM "file:///C:/Users/Wobetu%20PC/Desktop/GithubProjects/IntegrativeProgramming/XML%20Lab%20examples/LAB2%20-%20DTD%20LAB/catalog%20xml/generated%20cata.dtd">
+<CATALOG>
+  <PRODUCT NAME="" CATEGORY="HandTool" PARTNUM="purtinm data" PLANT="Pittsburgh" INVENTORY="InStock">
+        <SPECIFICATIONS WEIGHT="4353" POWER="2344">This is spec content</SPECIFICATIONS>
+        <OPTIONS FINISH="Polished">This is options content</OPTIONS>
+        <NOTES>This is notes section</NOTES>
+  </PRODUCT>
+&AUTHOR;  &COMPANY;    &EMAIL;
+</CATALOG>
