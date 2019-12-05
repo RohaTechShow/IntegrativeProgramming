@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="bookstore5.xsd">
+    <book>
+          <title>Introduction to Information Technology</title>
+          <price>54 USD</price>price>
+          <publisher>Astre Nega publishing</publisher>
+    </book>
+
+    <book>
+          <title>Computer programming</title>
+          <price>54 USD</price>price>
+          <publisher>Astre Nega publishing</publisher>
+    </book>
+    
+    <book>
+          <title>Artificial Intelligence</title>
+          <price>54 USD</price>price>
+          <publisher>Astre Nega publishing</publisher>
+    </book>
+</bookstore>

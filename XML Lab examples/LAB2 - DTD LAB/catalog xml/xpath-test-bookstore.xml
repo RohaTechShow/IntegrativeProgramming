@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?> 
+<bs:bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:bs="http://www.w3schools.com/bookstore"
+ xsi:schemaLocation="http://www.w3schools.com/bookstore bookstore2.xsd"> 
+  <bs:book> 
+    <bs:title>Harry Potter</bs:title> 
+    <bs:price>29.99</bs:price> 
+  </bs:book> 
+  
+   <bs:book> 
+    <bs:title>Harry Potter</bs:title> 
+    <bs:price>29.99</bs:price> 
+  </bs:book>
+   
+</bs:bookstore>
