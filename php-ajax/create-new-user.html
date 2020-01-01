@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function createNewUser() {
+          var xhr=new XMLHttpRequest();
+          var url="create-user.php";
+
+          var emp_id=document.getElementById("emp_id").value;
+          var fname=document.getElementById("fname").value;
+          var mname=document.getElementById("mname").value;
+          var lname=document.getElementById("lname").value;
+
+          var qualification=document.getElementById("qualification").value;
+          var department=document.getElementById("dept").value;
+
+          xhr.onreadystatechange=function () {
+              if (xhr.readyState==4 && xhr.status==200){
+                var resultData=xhr.responseText;
+                document.getElementById("status").innerHTML=resultData;
+              }
+          };
+        var userData="emp_id="+emp_id+"&fname="+fname+"&mname="+mname+"&lname="+
+            lname+"&qualification="+qualification+"&department="+department;
+          xhr.open("POST",url,true);
+          xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+          xhr.send(userData);
+        }
+    </script>
+</head>
+<body>
+   <form id="">
+       Employee ID: <input type="text" id="emp_id"/><br/><br/>
+       First Name: <input type="text" id="fname"/><br/><br/>
+       Middle Name: <input type="text" id="mname"/><br/><br/>
+       Last Name: <input type="text" id="lname"/><br/><br/>
+
+       <br/><br/>
+
+       Education Qualification: <input type="text" id="qualification"/><br/><br/>
+       Department: <input type="text" id="dept"/><br/>
+
+       <button type="button" onclick="createNewUser()">Save</button>
+   </form>
+
+<p id="status"></p>
+</body>
+</html>

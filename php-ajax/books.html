@@ -1,0 +1,35 @@
+<html>
+<body>
+
+<H2>Accessing a node using its index Number</H2>
+<p id="indexNumber"></p>
+
+<H2>Looping through nodes</H2>
+<p id="loopNodes"></p>
+
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+};
+xhttp.open("GET", "http://localhost/php-ajax/books.xml", true);
+xhttp.send();
+
+function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+
+    document.getElementById("indexNumber").innerHTML=
+        xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue+"<br/>";
+
+    var x=xmlDoc.getElementsByTagName("title");
+    for (i=0; i<x.length; i++){
+        document.getElementById("loopNodes").innerHTML+=x[i].childNodes[0].nodeValue+"<br/>";
+    }
+}
+
+</script>
+
+</body>
+</html>
