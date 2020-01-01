@@ -75,8 +75,10 @@
         </script>
 
         <button type="button" onclick="getAllUsers()">Get All Users</button>
-        <input type="text" id="firstname" onkeyup="searchUser()"/><br/><br/>
+        <input type="text" id="firstname" onkeyup="searchUser()"/>
         <a href="create-new-user.html">Create new user</a>
+
+        <a href="users.php">Show users XML Data</a>
         <p id="displayUser"></p>
     </body>
 </html>
